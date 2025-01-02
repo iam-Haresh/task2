@@ -1,8 +1,6 @@
 ---
-- name: Install Docker
-  hosts: docker
-  vars:
-    docker_users: ["ubuntu"]
+- name: Install Jenkins
+  hosts: jenkins
   become: yes
   roles:
-    - geerlingguy.docker
+    - geerlingguy.jenkins
