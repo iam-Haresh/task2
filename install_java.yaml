@@ -1,0 +1,6 @@
+---
+- name: Install Java
+  hosts: jenkins_worker
+  become: yes
+  roles:
+    - geerlingguy.java
