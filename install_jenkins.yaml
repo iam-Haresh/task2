@@ -6,6 +6,8 @@
     - geerlingguy.java
 - name: Install Jenkins
   hosts: jenkins
+  vars:
+    jenkins_url_prefix: "/jenkins"
   become: yes
   roles:
     - geerlingguy.jenkins
